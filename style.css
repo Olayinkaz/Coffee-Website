@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+}
+body{
+    /* background: linear-gradient(to right, hsl(0, 0%, 100%, 0.5)), url(image/coffee\ img.jpeg); */
+    /* background-size: cover; */
+    /* background-repeat: no-eat; */
+    background-color: #FFFDA2;
+    justify-content: center;
+    
+}
+
+#mainPage{
+    background-image: url(image/coffee\ img.jpeg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    background-color: #CC9544;
+    padding: 10px;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+
+}
+li{
+    list-style: none;
+    display: inline;
+    margin: 0 5%;
+   
+    
+}
+li a{
+    color:#CC9544 ;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #603601;
+
+}
+li a:hover{
+    color: #05595B;
+
+    background-color: #1C0A00;
+}
+.main-content{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+ 
+
+.main-content h1{
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    line-height:50px ;
+    text-transform: uppercase;
+    color: #FBCAFF;
+}
+.main-content h1:hover{
+    font-weight: 100;
+    font-style: italic;
+    text-transform: uppercase;
+    color: aqua;
+}
+.main-content p{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 50px;
+    color: #FFE162;
+    text-transform: uppercase;
+}
+.main-content p:hover{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: #F3C5C5 ;
+}
+
+.main-content button{
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #86C6F4;
+  color: #1C0A00;
+  cursor: auto;
+  font-size: 30px ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+
+}
+.main-content button:hover{
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(122, 85, 85);
+    font-size: 20px;
+    
+} 
+.footer{
+    text-align: right;
+    margin-right: 10px;
+    color: #2666CF;
+}
+
+#about-main{
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    /* flex-direction: column-reverse; */
+}
+.about-img-div{
+    width: 50%;
+    /* height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 2;
+}
+.about-img{
+    width: 300px;
+    height: 300px;
+    margin: 100px 0;
+    border: 5px solid #1C0A00;
+    border-radius: 100%;
+}
+.about-text-div{
+    width: 50%;
+    flex-grow: 1;
+}
+.about-text-div h1{
+    margin-top: 30px;
+    text-align: justify;
+}
+.about-text-div p{
+    font-family: Nunito;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+  #main-product{
+  max-width:970px ; 
+    margin: auto;
+    display: flex;
+  }
+.featured-product{
+    height: 100%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+
+    
+}
+.featured-product p{
+   font-size: 40px;
+   color: #534340;
+}
+.featured-product ol{
+list-style-type: square;
+width: 0;
+font-size: 30px ;
+height:10px;
+margin-top: 10px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifS;
+color: #1C0A00;
+
+
+
+}
+.product-img-div{
+    width: 50%;
+    justify-items: auto;
+    display: block;
+    margin-top: 80px;
+    flex-grow: 2;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.products-image{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    border: 10%;
+    margin-top:20px ;
+}
+.products-image1{
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+.contactme{
+    width: 20%;
+    height: 50%;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-size:large ;
+    color: darkslategray;
+}  
+
+a.twitter{
+ width: 50%;
+ height: 50%;
+ color: #86C6F4;
+ font-size: 60px;
+ margin-top: 40px;
+ margin-left:40px ;
+ transition-duration: o.3s;
+}
+a.twitter:hover{
+    color: aqua;
+
+}    
+a.facebook{
+    width: 50%;
+ height: 50%;
+ color: #2666CF;
+ font-size: 60px;
+ margin-top: 40px;
+ margin-left:40px ;
+}
+a.facebook:hover{
+    color: #FBCAFF;
+}
+
+@media(max-width:800px) {
+ #about-main{
+     flex-direction: column;
+ }
+ .about-text-div{
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+ }
+ .about-img-div{
+   margin: 0 auto; 
+ }
+}
+@media(max-width:970px) {
+   #main-product{
+       flex-direction: column;
+       display: flex;
+   }
+   .product-img-div{
+       margin-left: 30px;
+       width: 80%;
+   }
+   .featured-product{
+       margin-left: 30px;
+       margin-right: 30px;
+   }
+
+
+ }
